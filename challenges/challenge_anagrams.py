@@ -26,18 +26,12 @@ def merge(left, right):
 
 
 def is_anagram(first_string, second_string):
-
+    first_string = sort_string(first_string.lower())
+    second_string = sort_string(second_string.lower())
     if not first_string or not second_string:
-        return False
-
-    sorted_first = sort_string(first_string)
-    sorted_second = sort_string(second_string)
-
-    return (
-        sorted_first,
-        sorted_second,
-        sorted_first.lower() == sorted_second.lower(),
-    )
-
-
-print(is_anagram("", "perda"))
+        result = (first_string, second_string, False)
+        return result
+    if first_string == second_string:
+        result = (first_string, second_string, True)
+        return result
+    return (first_string, second_string, False)
