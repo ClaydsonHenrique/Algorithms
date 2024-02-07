@@ -29,10 +29,15 @@ def is_anagram(first_string, second_string):
 
     if not first_string or not second_string:
         return False
+
     sorted_first = sort_string(first_string)
     sorted_second = sort_string(second_string)
+
     return (
         sorted_first,
         sorted_second,
         sorted_first.lower() == sorted_second.lower(),
     )
+
+
+print(is_anagram("", "perda"))
