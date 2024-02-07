@@ -16,3 +16,9 @@ def encrypt_message(message: str, key: int):
         part_two, part_one = part_one, part_two
 
     return "".join(part_one) + "_" + "".join(part_two)
+
+
+print(encrypt_message("message", 0))
+print(encrypt_message("message", 3))
+print(encrypt_message("message", 2))
+print(encrypt_message("message", 4))
