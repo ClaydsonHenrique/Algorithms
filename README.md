@@ -28,7 +28,4 @@ Desenvolvido um algoritmo que compara duas strings para determinar se uma é um 
 2. Navegue até o diretório do projeto.
 3. Execute os testes com `pytest` para verificar as implementações.
 
-## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou um pull request.
 
